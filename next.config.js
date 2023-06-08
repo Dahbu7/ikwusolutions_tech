@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
-
-import { join } from "path";
+const path = require("path");
 
 const nextConfig = {
 	reactStrictMode: true,
 	sassOptions: {
-		includePaths: [join(__dirname, "styles")],
+		includePaths: [path.join(__dirname, "styles")],
 	},
 };
 
